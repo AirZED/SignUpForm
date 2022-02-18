@@ -1,0 +1,119 @@
+
+*{
+    font-weight: 600;
+    letter-spacing: .07rem;
+}
+
+body{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    border-bottom: .2rem solid #ccc;
+    display: block;
+    width: 15rem;
+    padding: 1rem;
+    padding-left: 9rem;
+}
+
+form{
+    width: 27rem;
+    height: 38rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: .3rem solid #ccc;
+    border-radius: 2rem 6rem;
+}
+
+
+label{
+    display: block;
+    padding: .8rem;
+    padding-left: .4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    padding: .5rem;
+    background-color: #ccc;
+    inline-size: 18rem;
+    block-size: 2rem;
+    border-radius: .7rem;
+    border: .2rem solid white;
+    font-size: 1rem;
+} 
+
+input[type=Email]:not(:placeholder-shown):invalid{
+    color: red;
+    /* the :not(:placeholder-shown) avoids selection of input with no content */
+}
+
+button{
+    padding: .8rem 3rem;
+    background-color: rgb(236, 62, 49);
+    border: .2rem solid white;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+button:hover{
+    color: white;
+}
+
+section{
+    margin: 1rem;
+    position: relative;
+}
+
+
+.fa-eye{
+    font-size: 1.8rem;
+    color: black;
+    position: absolute;
+    top: 61%;
+    right: .8rem;
+}
+
+.fa-eye:hover{
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+@media (max-width: 720px){
+
+    body{
+        align-items: center;
+        padding-block-start: 1rem;
+        flex-direction: column;
+        gap: none;
+        height: auto;
+        width: 100vw;
+    }
+    form{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    
+    input{
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    } 
+    
+    button{
+        padding: .9rem 3rem;
+    }
+}

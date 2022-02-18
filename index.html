@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sign in Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+
+    
+    <form action="">
+        <h2>Sign In</h2>
+        <section>
+            <label for="Name" >Name</label>
+            <input type="text" id="Name">
+        </section>
+
+        <section>
+            <label for="email">Email</label>
+            <input type="email" id="email"  autocomplete="email" required...>
+            <!-- Using the id of the input as the for of the label enable on label click, 
+            focus is adjusted to input. -->
+
+            <!-- Using the input type email supplies the right type of keyboard to mobile users and also enable auto-suggest -->
+        </section>
+
+        <section>
+            <label for="password" ...>Password</label>
+            <input type="password" id="password" autocomplete="password" name="current-password" required... >
+            <div class="fas fa-eye" id="show-psd"></div>
+
+            <!-- using the type password enables hiding of password by browser -->
+            <!-- Use type, new-password to auto suggest password in sign in form -->
+        </section>
+
+        <!-- Donnot repeat inputs as it promotes abandonment of form -->
+        <!-- Use an email validation of need be -->
+        <button type="submit">Sign In</button>
+
+       <a href="#">Forget Password?</a>
+    </form>
+
+    <form action="">
+        <h2>Sign Up</h2>
+        <section>
+            <label for="name" >Name</label>
+            <input type="text" id="name" autocomplete="name">
+        </section>
+
+        <section>
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email" required...>
+            <!-- Using the id of the input as the for of the label enable on label click, 
+            focus is adjusted to input. -->
+
+            <!-- Using the input type email supplies the right type of keyboard to mobile users and also enable auto-suggest -->
+        </section>
+
+        <section>
+            <label for="password" ...>Password</label>
+            <input type="password" id="password" name="new-password" autocomplete="new-password" required> 
+            <div class="fas fa-eye"></div>
+
+            <!-- using the type password enables hiding of password by browser -->
+        </section>
+
+        <!-- Donnot repeat inputs as it promotes abandonment of form -->
+        <!-- Use an email validation of need be -->
+        <button type="submit">Sign Up</button>
+
+    </form>
+
+    <!--Disable button once clicked-->
+    <!-- Add and auto focus on your input to enable auto selection of input hence users wont have to select input to start typing -->
+
+    
+    <p>With the link below, you can get more on input type and name properties and their advantages in frontend development</p>
+</body>
+</html>
